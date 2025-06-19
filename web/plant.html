@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Management Information System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #198754;
+      color: white;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+    }
+    .sidebar a:hover {
+      background-color: #157347;
+    }
+    .submenu a {
+      padding-left: 30px;
+      font-size: 0.95rem;
+      background-color: #1e7e34;
+    }
+    .submenu a:hover {
+      background-color: #146c2c;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar d-flex flex-column">
+    <h4 class="text-center py-3 border-bottom border-light">Plant MIS</h4>
+    <a href="#dashboard">Dashboard</a>
+
+    <!-- MasterData with collapsible sub-menu -->
+    <a href="#masterdata" data-bs-toggle="collapse" data-bs-target="#masterdataSub" aria-expanded="false" aria-controls="masterdataSub">
+      MasterData
+    </a>
+    <div class="collapse submenu" id="masterdataSub">
+      <a href="#plants">Plants</a>
+      <a href="#location">Locations</a>
+      <a href="#varietes">Varietes</a>
+      <a href="#details">Details</a>
+      <a href="#users">Users</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h2>Dashboard</h2>
+    <p>Welcome to the Plant Management Information System. Select an option from the sidebar to begin.</p>
+
+    <!-- Incorporated NetBeans HTML section -->
+    <div>
+      <!-- Begin TODO content -->
+      <div>CONTENT</div>
+      <!-- End TODO content -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
